@@ -1,0 +1,177 @@
+@import '../less/theme.less';
+.vaccine-app-work{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  .vaccine-app-work-baby-index{
+    /*position: relative;*/
+    .line-box{
+      padding: 30px 0;
+      border-bottom: 1px solid @border-1-color;
+      font-size: 30px;
+      line-height: 50px;
+      .img{
+        display: inline-block;
+        vertical-align: top;
+        width: 90px;
+        height: 91px;
+      }
+      .title{
+        display: inline-block;
+        vertical-align: top;
+        width: auto;
+        height: 91px;
+        padding-left: 15px;
+        .name{
+          font-size: 36px;
+          font-weight: 600;
+          line-height: 50px;
+        }
+        .subTitle{
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+      a{
+        display: inline-block;
+        vertical-align: middle;
+        .icon-edit{
+          vertical-align: top;
+          margin-left: 30px;
+        }
+      }
+      .date{
+        font-size: 36px;
+      }
+      &.padding-top-0{
+        padding-top: 0;
+      }
+      &.no-border{
+        border: 0;
+      }
+    }
+    .empty{
+      position: absolute;
+      top: 50%;
+      margin-top: -125px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 250px;
+      background: url("../img/empty.png") top center no-repeat;
+      background-size: 137px 128px;
+      padding-top: 170px;
+      font-size: 38px;
+      color: @theme-1-color;
+      text-align: center;
+      a{
+        display: inline-block;
+        padding-left: 60px;
+        height: 80px;
+        line-height: 80px;
+        background: url("../img/add-circle.png") left center no-repeat;
+        background-size: 43px 42px;
+      }
+    }
+    .appoint{
+      color: @theme-3-color;
+      margin-top: 20px;
+      &>span{
+        display: inline-block;
+        width: 50%;
+      }
+    }
+  }
+  .vaccine-app-work-mom-list{
+    .swiper-container{
+      position: relative;
+      width: 750px;
+      height: 300px;
+      img{
+        position: relative;
+        width: 750px;
+        height: 300px;
+      }
+    }
+    .zone{
+      line-height: 60px;
+      font-size: 30px;
+      .title{
+        color: @text-1-color;
+      }
+      .subTitle{
+        color: @text-2-color;
+      }
+      .more{
+        color: @theme-1-color;
+        position: absolute;
+        bottom: 30px;
+        right: 40px;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  .vaccine-app-work-appoint{
+    .text{
+      font-size: 32px;
+      color: @text-1-color;
+      height: 90px;
+      line-height: 90px;
+      &.line-box{
+        border-bottom: 1px solid @border-1-color;
+      }
+      a{
+        display: inline-block;
+        float: right;
+        .icon-edit{
+          vertical-align: middle;
+        }
+      }
+    }
+    .appoint-list{
+      font-size: 30px;
+      color: @text-4-color;
+      width: 720px;
+      margin: 10px 0 75px -20px;
+      height: auto;
+      box-sizing: border-box;
+      text-align: left;
+      &>li{
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 200px;
+        height: 120px;
+        box-sizing: border-box;
+        border: 1px solid @border-1-color;
+        border-radius: 10px;
+        background-color: #dff4ec;
+        text-align: center;
+        padding: 10px 0;
+        margin: 15px 20px;
+        &>span{
+          display: inline-block;
+          width: 100%;
+          line-height: 48px;
+        }
+        &.select{
+          color: @text-3-color;
+          background-color: @theme-1-color;
+          border-color: @theme-1-color;
+        }
+      }
+    }
+    .btn-submit{
+      width: 240px;
+      font-size: 36px;
+    }
+  }
+}
+

@@ -1,0 +1,45 @@
+@import '../less/theme.less';
+.vaccine-app-district {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+  color: @text-1-color;
+  .row-wrapper {
+    padding: 15px 0;
+    font-size: 30px;
+    line-height: 50px;
+    .picker-list{
+      .am-list-body {
+        box-sizing: content-box;
+        border: 1px solid @border-1-color;
+        border-right: 2px solid @border-1-color;
+        border-left: 2px solid @border-1-color;
+        height: 75px;
+        line-height: 75px;
+        .picker-list-item {
+          height: 75px;
+          line-height: 75px;
+          .am-list-extra {
+            font-size: 24px;
+            text-align: left;
+          }
+          .am-list-arrow {
+            margin-left: 400px;
+          }
+        }
+      }
+    }
+    .submit-btn{
+      margin: 0 auto;
+      width: 200px;
+      height: 70px;
+      line-height: 70px;
+      border-radius: 10px;
+      font-size: 34px;
+      background-color: @theme-1-color;
+      color: @text-3-color;
+    }
+  }
+}

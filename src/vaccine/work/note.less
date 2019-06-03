@@ -1,0 +1,93 @@
+@import '../less/theme.less';
+.vaccine-app-note {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  color: @text-1-color;
+  font-size: 30px;
+  .row-wrapper-first {
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ccf0e2;
+    color: #ff7043;
+    text-align: center;
+  }
+  .row-wrapper::after {
+    clear:both;
+    content:'';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility:hidden;
+  }
+  .row-wrapper {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    font-size: 30px;
+    .row-title {
+      padding-bottom: 15px;
+      width: 92%;
+      font-size: 40px;
+      border-bottom: 1px solid @border-1-color;
+    }
+    .row-item {
+      float: left;
+      width: 92%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      .item-title {
+        float: left;
+      }
+      .item-stage {
+        float: left;
+      }
+      .item-icon {
+        float: right;
+      }
+    }
+    .item-time{
+      width: 92%;
+      float: left;
+      padding-top: 15px;
+      color: @text-2-color;
+    }
+  }
+}
+.vaccine-app-details {
+  .row-wrapper {
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    font-size: 30px;
+    .row-title {
+      padding-bottom: 15px;
+      width: 92%;
+      font-size: 40px;
+      border-bottom: 1px solid @border-1-color;
+    }
+    .sub-title{
+      color: @text-1-color;
+      position: relative;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      .row-mark {
+        border-left: 10px solid @theme-1-color;
+        height: 30px;
+        width: 4px;
+        position: absolute;
+        left: -30px;
+        top: 20px;
+      }
+    }
+    .row-content{
+      color: @text-4-color;
+      width: 92%;
+      line-height: 60px;
+      white-space: normal;
+      word-break: break-all;
+    }
+  }
+}

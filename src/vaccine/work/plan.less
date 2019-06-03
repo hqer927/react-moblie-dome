@@ -1,0 +1,250 @@
+@import '../less/theme.less';
+.vaccine-app-plan {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  color: @text-1-color;
+  .picker-list-item {
+    height: 75px;
+    line-height: 75px;
+    .am-list-extra {
+      font-size: 24px;
+      text-align: left;
+      position: absolute;
+    }
+    .am-list-arrow {
+      margin-left: 400px;
+    }
+  }
+  .am-picker{
+    .am-picker-col{
+      height: 600px;
+      .am-picker-col-mask{
+        height: 100%;
+      }
+      .am-picker-col-indicator{
+        height: 40px!important;
+        line-height: 40px!important;
+        top: 50%!important;
+        margin-top: -20px;
+      }
+      .am-picker-col-content{
+        .am-picker-col-item{
+          height: 40px!important;
+          line-height: 40px!important;
+          font-size: 30px!important;
+        }
+      }
+    }
+  }
+  .am-calendar {
+    .time-picker{
+      .title{
+        height: 0.8rem;
+        font-size: 0.36rem;
+      }
+    }
+    .confirm-panel{
+      .button{
+        height: 40px;
+        line-height: 40px;
+        font-size: 36px;
+      }
+    }
+    .content {
+      .header{
+        .title{
+          font-size: 0.34rem;
+          height: 0.4rem;
+        }
+        .left{
+          top: 0.15rem;
+          .am-icon-md{
+            width: 0.4rem;
+            height: 0.4rem;
+          }
+        }
+        .right{
+          top: 0.15rem;
+          font-size: 0.3rem;
+        }
+      }
+      .am-calendar{
+        &.date-picker{
+          .week-panel{
+            .cell{
+              font-size: 0.36rem;
+              height: 0.4rem;
+              line-height: 0.4rem;
+            }
+          }
+          .wrapper{
+            .months{
+              .date{
+                .cell{
+                  .date{
+                    font-size: 0.3rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .row-wrapper::after{
+    clear:both;
+    content:'';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility:hidden;
+  }
+  .row-wrapper {
+    padding: 15px 30px;
+    font-size: 30px;
+    &.last{
+      margin: 30px auto;
+    }
+    &.first{
+      padding: 0;
+      height: 60px;
+      line-height: 60px;
+      background-color: #ccf0e2;
+      color: #ff7043;
+      text-align: center;
+    }
+    &.second{
+      margin-top: 15px;
+    }
+    .input-wrapper {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+      .time-input {
+        text-indent:15px;
+        width: 100%;
+        height: 75px;
+        line-height: 75px;
+        border: 1px solid @border-1-color;
+        border-radius: 4px;
+        font-size: 28px;
+      }
+      .icon_calendar {
+        width: 60px;
+        height: 60px;
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        background-image: url("../img/calendar.png");
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+    }
+    .vaccine-wrapper {
+      margin-top: 15px;
+      float: left;
+      box-sizing: border-box;
+      width: 100%;
+      .am-list-content{
+        font-size: 28px;
+      }
+      .am-list-item {
+        width: 47%;
+        float: left;
+        line-height: 30px;
+        padding-left:20px;
+        .am-list-line::after {
+          background: none;
+        }
+        .am-checkbox-inner{
+          border-radius: 0%!important;
+        }
+        .am-checkbox.am-checkbox-checked {
+          .am-checkbox-inner{
+            border-color: @theme-1-color;
+            background: @theme-1-color;
+          }
+        }
+      }
+    }
+    .addSMS-radio {
+      float: left;
+      .am-checkbox {
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+      }
+    }
+    .phone-input {
+      display: block;
+      float: left;
+      margin-top: 15px;
+      width: 98%;
+      height: 75px;
+      line-height: 75px;
+      border-radius: 4px;
+      .am-input-control{
+        input{
+          font-size: 28px;
+        }
+      }
+    }
+    .sms-wrapper {
+      width: 100%;
+      float: left;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      .am-list-line::after,.am-list-item:not(:last-child) {
+        background-color: unset!important;
+      }
+      .am-list-item {
+        width: 30%;
+        float: left;
+        line-height: 30px;
+        background-color: unset!important;
+        .am-list-content {
+          font-size: 24px;
+        }
+      }
+    }
+    .sms-content {
+      textarea {
+        height: 100px;
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+    .submit-btn{
+      margin: 0 auto;
+      width: 200px;
+      height: 70px;
+      line-height: 70px;
+      border-radius: 10px;
+      font-size: 34px;
+      background-color: @theme-1-color;
+      color: @text-3-color;
+    }
+    .am-checkbox {
+      width: 30px;
+      height: 30px;
+      .am-checkbox-inner {
+        width: 30px;
+        height: 30px;
+      }
+      .am-checkbox-inner:after {
+        width: 0.09rem;
+        height: 0.16rem;
+        right: 0.09rem;
+        border-width: 0 0.03rem 0.03rem 0!important;
+      }
+    }
+    .am-checkbox.am-checkbox-checked {
+      .am-checkbox-inner{
+        border-color: @theme-1-color;
+        background: @theme-1-color;
+      }
+    }
+  }
+}
